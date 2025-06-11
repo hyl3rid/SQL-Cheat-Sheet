@@ -22,7 +22,7 @@ SELECT * FROM   BookSalesData;
 | 9      | Bob William   | 2023‑04‑05 | Religious Allegory   | Pilgrim's Progress   | 150.00      |
 | 10     | David Mitchel | 2023‑07‑05 | Classical Literature | Faust                | 325.00      |
 | 11     | Charlie Wilson| 2023‑07‑10 | Epic Poetry          | The Aeneid           |  45.00      |
-| 12     | David Mitchel | 2023‑07‑15 | Religious Allegory   | Paradise Regained    | 125.00      |
+| 12     | David Mitchel | 2023‑07‑15 | Religious Allegory   | Paradise Lost        | 125.00      |
 | 13     | Charlie Wilson| 2023‑07‑20 | Epic Poetry          | The Odyssey          |  25.50      |
 | 14     | Charlie Wilson| 2023‑08‑10 | Classical Literature | Faust                | 700.50      |
 | 15     | Bob William   | 2023‑09‑05 | Classical Literature | The Odyssey          | 350.00      |
