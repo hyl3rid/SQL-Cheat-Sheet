@@ -1,12 +1,13 @@
 # Book‑Sales SQL Cheat‑Sheet
 ---
-
+###Basic SELECT
 ```sql
--- Basic SELECT
 SELECT (pick_a_column) FROM   BookSalesData;
-
--- Inspect entire table
+```
+###Inspect entire table
+```sql
 SELECT * FROM   BookSalesData;
+```
 ```
 | SaleID | SalesPerson   | SaleDate   | BookGenre            | BookTitle            | SalesAmount |
 |-------:|---------------|------------|----------------------|----------------------|-------------|
