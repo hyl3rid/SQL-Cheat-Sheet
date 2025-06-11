@@ -125,7 +125,40 @@ WHERE  SaleID = 11;   -- Always include WHERE
 ### Delete an Entry (Be Specific!)
 ```sql
 DELETE FROM BookSalesData
-WHERE  SaleID = 4;    -- Never drop the whole table by accident
+WHERE  SaleID = 4;    -- Always include WHERE, if not table can be deleted
+```
+
+---
+
+### Update Existing Table
+Change column data type
+```sql
+ALTER TABLE BookSalesData
+MODIFY BookGenre INT;
+```
+
+Rename table
+```sql
+ALTER TABLE BookSalesData
+RENAME TO Books;
+```
+
+Rename Column
+```sql
+ALTER TABLE BookSalesData
+RENAME COLUMN BookGenre TO Genres;
+```
+
+New new column
+```sql
+ALTER TABLE BookSalesData
+ADD Quantity INT;
+```
+
+Delete column
+```sql
+ALTER TABLE BookSalesData
+DROP COLUMN BookGenre;
 ```
 
 
