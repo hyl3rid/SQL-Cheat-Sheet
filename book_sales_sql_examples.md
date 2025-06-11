@@ -62,8 +62,8 @@ SELECT SalesPerson,
        BookGenre,
        BookTitle,
        SUM(SalesAmount) AS TotalSold
-FROM   BookSalesData
-GROUP  BY SalesPerson, BookGenre, BookTitle;
+FROM BookSalesData
+GROUP BY SalesPerson, BookGenre, BookTitle;
 ```
 
 ---
