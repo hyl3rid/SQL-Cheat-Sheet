@@ -50,7 +50,13 @@ FROM   BookSalesData
 ORDER BY SalesAmount DESC;  -- or ASC
 ```
 
+### Limit Output
+```sql
+SELECT * FROM SalesData
+LIMIT 5;
+```
 ### Aggregation with GROUP BY
+Aggregation functions: COUNT(), SUM(), AVG(), MIN(), and MAX()
 ```sql
 SELECT SalesPerson,
        BookGenre,
