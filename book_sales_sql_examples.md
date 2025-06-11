@@ -42,6 +42,8 @@ WHERE  BookGenre = 'Classical Literature'
    OR  BookGenre = 'Religious Allegory';
 ```
 
+---
+
 ### Sorting & Distinct
 ```sql
 SELECT DISTINCT SalesPerson,
@@ -50,11 +52,16 @@ FROM   BookSalesData
 ORDER BY SalesAmount DESC;  -- or ASC
 ```
 
+---
+
 ### Limit Output
 ```sql
 SELECT * FROM SalesData
 LIMIT 5;
 ```
+
+---
+
 ### Aggregation with GROUP BY
 Aggregation functions: COUNT(), SUM(), AVG(), MIN(), and MAX()
 ```sql
@@ -86,11 +93,14 @@ CREATE TABLE Books (
 );
 ```
 
+---
+
 ### Get table definitions
 Returns the schema details (column names, types, nullability) for the BookSalesData table.
 ```sql
 DESCRIBE BookSalesData;
 ```
+
 ---
 
 ### Insert New Book Sale
@@ -101,12 +111,16 @@ VALUES
     (16, 'Mary Jones', '2023‑10‑15', 'Epic Poetry', 'Paradise Regained', 800.00);
 ```
 
+---
+
 ### Update an Existing Entry
 ```sql
 UPDATE BookSalesData
 SET    SalesPerson = 'Mary Jones', SalesAmount = 35.00
 WHERE  SaleID = 11;   -- Always include WHERE
 ```
+
+---
 
 ### Delete an Entry (Be Specific!)
 ```sql
