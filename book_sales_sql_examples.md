@@ -133,6 +133,7 @@ WHERE  SaleID = 4;    -- Always include WHERE, if not table can be deleted
 ### Update Existing Table
 Change column data type
 ```sql
+-- ⚠️ Use with caution: changing data types can corrupt existing data
 ALTER TABLE BookSalesData
 MODIFY BookGenre INT;
 ```
@@ -149,7 +150,7 @@ ALTER TABLE BookSalesData
 RENAME COLUMN BookGenre TO Genres;
 ```
 
-New new column
+Add new column
 ```sql
 ALTER TABLE BookSalesData
 ADD Quantity INT;
@@ -157,6 +158,7 @@ ADD Quantity INT;
 
 Delete column
 ```sql
+-- ⚠️ This will permanently remove the column and its data
 ALTER TABLE BookSalesData
 DROP COLUMN BookGenre;
 ```
