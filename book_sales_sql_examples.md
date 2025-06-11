@@ -8,9 +8,6 @@ SELECT (pick_a_column) FROM   BookSalesData;
 -- Inspect entire table
 SELECT * FROM   BookSalesData;
 ```
-
----
-
 | SaleID | SalesPerson   | SaleDate   | BookGenre            | BookTitle            | SalesAmount |
 |-------:|---------------|------------|----------------------|----------------------|-------------|
 | 1      | John Smith    | 2023‑01‑10 | Epic Poetry          | Paradise Lost        | 500.00      |
