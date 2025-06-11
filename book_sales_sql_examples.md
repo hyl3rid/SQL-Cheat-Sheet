@@ -3,12 +3,10 @@
 
 ```sql
 -- Basic SELECT
-SELECT (pick_a_column)
-FROM   BookSalesData;
+SELECT (pick_a_column) FROM   BookSalesData;
 
 -- Inspect entire table
-SELECT *
-FROM   BookSalesData;
+SELECT * FROM   BookSalesData;
 ```
 
 | SaleID | SalesPerson   | SaleDate   | BookGenre            | BookTitle            | SalesAmount |
@@ -95,8 +93,7 @@ VALUES
 ### Update an Existing Entry
 ```sql
 UPDATE BookSalesData
-SET    SalesPerson = 'Mary Jones',
-       SalesAmount = 35.00
+SET    SalesPerson = 'Mary Jones', SalesAmount = 35.00
 WHERE  SaleID = 11;   -- Always include WHERE
 ```
 
