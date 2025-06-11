@@ -86,6 +86,11 @@ CREATE TABLE Books (
 );
 ```
 
+### Get table definitions
+Returns the schema details (column names, types, nullability) for the BookSalesData table.
+```sql
+DESCRIBE BookSalesData;
+```
 ---
 
 ### Insert New Book Sale
@@ -109,13 +114,6 @@ DELETE FROM BookSalesData
 WHERE  SaleID = 4;    -- Never drop the whole table by accident
 ```
 
----
-
-> **DESCRIBE BookSalesData;**
->
-> Returns the schema details (column names, types, nullability) for the BookSalesData table.
-
----
 
 
 
