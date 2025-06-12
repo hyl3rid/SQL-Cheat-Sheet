@@ -189,4 +189,20 @@ FROM BookSalesData
 WHERE SalesAmount <> Quantity * Price;
 ```
 
-### 
+---
+
+### Foreign keys
+```sql
+CREATE TABLE table_name (
+column1 datatype1,
+column2 datatype2,
+column3 datatype3,
+...
+PRIMARY KEY (column_name),
+FOREIGN KEY (fk_column) REFERENCES parent_table(rf_column)
+);
+```
+```sql
+ALTER TABLE BookSalesData
+ADD FOREIGN KEY (BookID) REFERENCES Book(BookID);
+```
