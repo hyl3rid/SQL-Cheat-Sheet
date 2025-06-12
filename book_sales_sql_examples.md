@@ -192,6 +192,7 @@ WHERE SalesAmount <> Quantity * Price;
 ---
 
 ### Foreign keys
+Specify foreign keys when creating a new table.
 ```sql
 CREATE TABLE table_name (
 column1 datatype1,
@@ -202,6 +203,7 @@ PRIMARY KEY (column_name),
 FOREIGN KEY (fk_column) REFERENCES parent_table(rf_column)
 );
 ```
+Add a foreign key to existing table.
 ```sql
 ALTER TABLE BookSalesData
 ADD FOREIGN KEY (BookID) REFERENCES Book(BookID);
