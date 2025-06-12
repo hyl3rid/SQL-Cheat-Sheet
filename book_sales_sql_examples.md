@@ -194,13 +194,14 @@ WHERE SalesAmount <> Quantity * Price;
 ### Foreign keys
 Specify foreign keys when creating a new table.
 ```sql
-CREATE TABLE table_name (
-column1 datatype1,
-column2 datatype2,
-column3 datatype3,
+CREATE TABLE BookSalesData (
+SaleID INT,
+SalesPerson CHAR(32),
+SaleDate DATE,
+BookID INT,
 ...
-PRIMARY KEY (column_name),
-FOREIGN KEY (fk_column) REFERENCES parent_table(rf_column)
+PRIMARY KEY (SaleID),
+FOREIGN KEY (BookID) REFERENCES Book(BookID)
 );
 ```
 Add a foreign key to existing table.
