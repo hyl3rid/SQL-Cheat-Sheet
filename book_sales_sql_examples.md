@@ -116,8 +116,8 @@ VALUES
 ### Update an Existing Entry
 ```sql
 UPDATE BookSalesData
-SET    SalesPerson = 'Mary Jones', SalesAmount = 35.00
-WHERE  SaleID = 11; -- Always include WHERE
+SET SalesPerson = 'Mary Jones', SalesAmount = 35.00
+WHERE SaleID = 11; -- Always include WHERE, if not all values will be updated
 ```
 
 ---
@@ -163,6 +163,30 @@ ALTER TABLE BookSalesData
 DROP COLUMN BookGenre;
 ```
 
+---
 
+### Aliases
+```sql
+SELECT SaleID, SalesAmount AS SAmount, Quantity * Price AS Amount
+FROM BookSalesData;
+```
 
+---
 
+### Table Alias
+```sql
+SELECT t.SaleID
+FROM BookSalesData as t;
+```
+
+---
+
+### Compare values
+```sql
+SELECT SaleID AS ID,
+Quantity * Price AS Amount, SalesAmount
+FROM BookSalesData
+WHERE SalesAmount <> Quantity * Price;
+```
+
+### 
