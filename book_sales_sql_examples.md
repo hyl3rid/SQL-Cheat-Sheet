@@ -2,11 +2,11 @@
 ---
 ### Basic SELECT
 ```sql
-SELECT (pick_a_column) FROM   BookSalesData;
+SELECT (pick_a_column) FROM BookSalesData;
 ```
 ### Inspect entire table
 ```sql
-SELECT * FROM   BookSalesData;
+SELECT * FROM BookSalesData;
 ```
 ```
 | SaleID | SalesPerson   | SaleDate   | BookGenre            | BookTitle            | SalesAmount |
@@ -37,9 +37,9 @@ SELECT BookGenre,
        SaleDate,
        BookTitle,
        SalesAmount
-FROM   BookSalesData
-WHERE  BookGenre = 'Classical Literature'
-   OR  BookGenre = 'Religious Allegory';
+FROM BookSalesData
+WHERE BookGenre = 'Classical Literature'
+OR BookGenre = 'Religious Allegory';
 ```
 
 ---
@@ -48,8 +48,8 @@ WHERE  BookGenre = 'Classical Literature'
 ```sql
 SELECT DISTINCT SalesPerson,
        SalesAmount
-FROM   BookSalesData
-ORDER BY SalesAmount DESC;  -- or ASC
+FROM BookSalesData
+ORDER BY SalesAmount DESC; -- or ASC
 ```
 
 ---
@@ -117,7 +117,7 @@ VALUES
 ```sql
 UPDATE BookSalesData
 SET    SalesPerson = 'Mary Jones', SalesAmount = 35.00
-WHERE  SaleID = 11;   -- Always include WHERE
+WHERE  SaleID = 11; -- Always include WHERE
 ```
 
 ---
@@ -125,7 +125,7 @@ WHERE  SaleID = 11;   -- Always include WHERE
 ### Delete an Entry (Be Specific!)
 ```sql
 DELETE FROM BookSalesData
-WHERE  SaleID = 4;    -- Always include WHERE, if not table can be deleted
+WHERE SaleID = 4; -- Always include WHERE, if not table can be deleted
 ```
 
 ---
@@ -153,7 +153,7 @@ RENAME COLUMN BookGenre TO Genres;
 Add new column
 ```sql
 ALTER TABLE BookSalesData
-ADD Quantity INT;
+ADD (Quantity INT NOT NULL, Price DEC(8,2) NOT NULL);
 ```
 
 Delete column
