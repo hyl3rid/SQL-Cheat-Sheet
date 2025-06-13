@@ -209,3 +209,29 @@ Add a foreign key to existing table.
 ALTER TABLE BookSalesData
 ADD FOREIGN KEY (BookID) REFERENCES Book(BookID);
 ```
+
+---
+
+### Extract data from multiple tables
+```sql
+SELECT * 
+FROM BookSalesData, Book
+WHERE BookSalesData.SaleID = Book.SaleID;
+```
+
+---
+
+### JOIN clause
+```sql
+SELECT * 
+FROM BookSalesData
+JOIN Book
+ON BookSalesData.SaleID = Book.SaleID;
+```
+
+Natural JOIN
+```sql
+SELECT * 
+FROM BookSalesData AS sd
+NATURAL JOIN Book AS b;
+```
