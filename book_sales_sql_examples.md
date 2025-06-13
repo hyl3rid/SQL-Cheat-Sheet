@@ -237,3 +237,20 @@ SELECT *
 FROM BookSalesData AS sd
 NATURAL JOIN Book AS b;
 ```
+
+---
+
+### Retrieving information from more than two tables
+```sql
+SELECT *
+FROM Sale
+JOIN Employee ON Sale.EmployeeID = Employee.EmployeeID
+JOIN Book ON Sale.SaleID = Book.SaleID;
+```
+
+---
+
+###
+```sql
+
+```
