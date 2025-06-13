@@ -229,7 +229,9 @@ JOIN Book
 ON BookSalesData.SaleID = Book.SaleID;
 ```
 
-Natural JOIN
+---
+
+### Natural JOIN
 ```sql
 SELECT * 
 FROM BookSalesData AS sd
