@@ -270,7 +270,7 @@ WHERE condition;
 
 ---
 
-#Subqueries
+### Subqueries
 ```sql
 -- Step 2: Outerquery to filter Product based on Sale
 SELECT Product.ProductID, Product.ProductName
