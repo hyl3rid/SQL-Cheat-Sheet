@@ -281,3 +281,36 @@ WHERE ProductID NOT IN (
     FROM Sale
 );
 ```
+
+---
+
+### Dates
+Date data types:
+- DATE
+- DATETIME
+- TIMESTAMP: tracks changes
+- YEAR
+
+Extract date details. Functions go after the SELECT statement:
+YEAR(column)
+MONTH(column)
+WEEK(column)
+DAY(column)
+MINUTE(column)
+SECOND(column)
+NOW()
+CURDATE()
+CURTIME()
+DATE()
+EXTRACT()
+
+Example:
+```sql
+SELECT student_id, full_name, enrollment_time, 
+       EXTRACT(HOUR FROM enrollment_time) AS hour_enrolled, 
+       EXTRACT(MINUTE FROM enrollment_time) AS minute_enrolled, 
+       EXTRACT(SECOND FROM enrollment_time) AS second_enrolled, 
+       EXTRACT(WEEK FROM enrollment_time) AS enrollment_week, 
+       EXTRACT(YEAR FROM enrollment_time) AS enrollment_year
+FROM students;
+```
