@@ -250,7 +250,34 @@ JOIN Book ON Sale.SaleID = Book.SaleID;
 
 ---
 
-###
+### OUTER JOIN
+LEFT JOIN: includes all elements on the left side
+RIGHT JOIN: includes all elements in the right side
+FULL JOIN: includes matching elements and not matching elements
 ```sql
+SELECT column1, column2, ...
+FROM table1
+LEFT|RIGHT JOIN table2
+ON table1.common_column = table2.common_column;
+```
+```sql
+SELECT column_name(s)
+FROM table1
+FULL OUTER JOIN table2
+ON table1.column_name = table2.column_name
+WHERE condition;
+```
 
+---
+
+#Subqueries
+```sql
+-- Step 2: Outerquery to filter Product based on Sale
+SELECT Product.ProductID, Product.ProductName
+FROM Product
+WHERE ProductID NOT IN (
+    -- Subquery: Fetch ProductID from Sale
+    SELECT ProductID		
+    FROM Sale
+);
 ```
