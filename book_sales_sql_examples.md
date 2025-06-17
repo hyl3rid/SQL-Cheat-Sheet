@@ -76,12 +76,12 @@ GROUP BY SalesPerson, BookGenre, BookTitle;
 ---
 
 ### Table Definition (Books)
-Data Types
-INTEGER or INT: whole numbers.
-DECIMAL or DEC: DECIMAL(p, s), p = number of digits and s = number of decimal digits.
-CHAR: CHAR(size), size = number of characters
-DATE: The DATE represents dates.
-PRIMARY KEY is main column.
+Data Types  
+INTEGER or INT: whole numbers.  
+DECIMAL or DEC: DECIMAL(p, s), p = number of digits and s = number of decimal digits.  
+CHAR: CHAR(size), size = number of characters  
+DATE: The DATE represents dates.  
+PRIMARY KEY is main column.  
 ```sql
 CREATE TABLE Books (
     bookID         INT,
@@ -251,9 +251,9 @@ JOIN Book ON Sale.SaleID = Book.SaleID;
 ---
 
 ### OUTER JOIN
-LEFT JOIN: includes all elements on the left side
-RIGHT JOIN: includes all elements in the right side
-FULL JOIN: includes matching elements and not matching elements
+LEFT JOIN: includes all elements on the left side  
+RIGHT JOIN: includes all elements in the right side  
+FULL JOIN: includes matching elements and not matching elements  
 ```sql
 SELECT column1, column2, ...
 FROM table1
@@ -285,24 +285,15 @@ WHERE ProductID NOT IN (
 ---
 
 ### Dates
-Date data types:
-- DATE
-- DATETIME
-- TIMESTAMP: tracks changes
-- YEAR
+Date data types:  
+- DATE  
+- DATETIME  
+- TIMESTAMP: tracks changes  
+- YEAR  
 
-Extract date details. Functions go after the SELECT statement:
-YEAR(column)
-MONTH(column)
-WEEK(column)
-DAY(column)
-MINUTE(column)
-SECOND(column)
-NOW()
-CURDATE()
-CURTIME()
-DATE()
-EXTRACT()
+Extract date details. Functions go after the SELECT statement:  
+YEAR(column), MONTH(column), WEEK(column), DAY(column), MINUTE(column), SECOND(column)  
+NOW(), CURDATE(), CURTIME(), DATE(), EXTRACT()  
 
 Example:
 ```sql
@@ -318,8 +309,8 @@ FROM students;
 ---
 
 ### LIKE operator
-% operator represents 0 or more characters
-_ operator represents a single character
+% operator represents 0 or more characters  
+_ operator represents a single character  
 ```sql
 SELECT * FROM BookSalesData WHERE BookTitle LIKE "P%"; -- filters book titles that start with the "P" letter
 SELECT * FROM BookSalesData WHERE BookTitle LIKE "%eid"; -- filters book titles that end with eid
