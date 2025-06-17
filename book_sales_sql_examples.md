@@ -291,7 +291,7 @@ Date data types:
 - TIMESTAMP: tracks changes  
 - YEAR  
 
-Extract date details. Functions go after the SELECT statement:  
+Extract date details. Functions go after the desired column in the SELECT statement:  
 YEAR(column), MONTH(column), WEEK(column), DAY(column), MINUTE(column), SECOND(column)  
 NOW(), CURDATE(), CURTIME(), DATE(), EXTRACT()  
 
