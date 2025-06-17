@@ -314,3 +314,15 @@ SELECT student_id, full_name, enrollment_time,
        EXTRACT(YEAR FROM enrollment_time) AS enrollment_year
 FROM students;
 ```
+
+---
+
+### LIKE operator
+% operator represents 0 or more characters
+_ operator represents a single character
+```sql
+SELECT * FROM BookSalesData WHERE BookTitle LIKE "P%"; -- filters book titles that start with the "P" letter
+SELECT * FROM BookSalesData WHERE BookTitle LIKE "%eid"; -- filters book titles that end with eid
+SELECT * FROM BookSalesData WHERE BookTitle LIKE "% Ody____"; -- filters book titles that have preceeding words and 4 unknown characters
+SELECT * FROM BookSalesData WHERE BookTitle NOT LIKE "%a%"; -- filters books that have the letter a
+```
