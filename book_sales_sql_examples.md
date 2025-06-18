@@ -317,3 +317,29 @@ SELECT * FROM BookSalesData WHERE BookTitle LIKE "%eid"; -- filters book titles 
 SELECT * FROM BookSalesData WHERE BookTitle LIKE "% Ody____"; -- filters book titles that have preceeding words and 4 unknown characters
 SELECT * FROM BookSalesData WHERE BookTitle NOT LIKE "%a%"; -- filters books that have the letter a
 ```
+
+---
+
+### INDEX
+INDEX allows queries improves effiency. Apply INDEX alias to JOIN statement.
+```sql
+CREATE INDEX IDX_Alias1
+ON Table1 (Column1, Column2);
+CREATE INDEX IDX_Alias2
+ON Table2 (Column3);
+CREATE UNIQUE INDEX IDX_Alias3
+ON Table2 (Column4);
+
+SELECT Table1.Column1, Table1.Column2
+FROM Table1
+JOIN Table2 ON Table1.Column1 = Table2.Column3
+WHERE Table1.Column1 = 'value';
+```
+
+---
+
+### SHOW Queries
+```sql
+SHOW DATABASES;
+SHOW TABLES;
+```
