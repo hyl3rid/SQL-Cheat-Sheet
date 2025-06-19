@@ -343,3 +343,9 @@ WHERE Table1.Column1 = 'value';
 SHOW DATABASES;
 SHOW TABLES;
 ```
+
+---
+
+### Relations and Relational Databases
+Relations are tables in a database composed of tuples (rows), attributes (columns) and no duplicated data.
+Relational Databases are tables linked together maintaining data integrity, consistency and efficiency.
