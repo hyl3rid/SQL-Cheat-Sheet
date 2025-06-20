@@ -340,6 +340,18 @@ WHERE Table1.Column1 = 'value';
 
 ---
 
+### Nested SELECT
+```sql
+SELECT employee_name, salary
+FROM employees
+WHERE salary > (
+    SELECT AVG(salary)
+    FROM employees
+);
+```
+
+---
+
 ### SHOW Queries
 ```sql
 SHOW DATABASES;
