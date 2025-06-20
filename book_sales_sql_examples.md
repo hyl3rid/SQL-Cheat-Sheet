@@ -418,12 +418,12 @@ Relational Databases are tables linked together maintaining data integrity, cons
 ---
 
 ### Database keys
-Keys identify unique rows in columns or groups of columns in tables. Keys create data integrity, avoids redundancy and creates relationships between tables.
+Keys identify unique rows in columns or groups of columns in tables. Keys create data integrity, avoids redundancy and creates relationships between tables.  
 
-Types of keys
-Primary key: Key is assigned to a column or group of columns and ensures that no duplicate rows are in the table.
-Composite key: Key is assigned to two or more columns that avoid redundancy on tables in the rows. 
-Unique key: Similar to primary keys but allow NULL value.
-Super key: Contain a group of columns with primary keys, composite keys or no keys at all.
-Candidate key: Uniquely identifies values in columns.
-Foreign key: Create relationships between tables and is considered the primary key in another table.
+Types of keys  
+Primary key: Key is assigned to a column or group of columns and ensures that no duplicate rows are in the table.  
+Composite key: Key is assigned to two or more columns that avoid redundancy on tables in the rows.  
+Unique key: Similar to primary keys but allow NULL value.  
+Super key: Contain a group of columns with primary keys, composite keys or no keys at all.  
+Candidate key: Uniquely identifies values in columns.  
+Foreign key: Create relationships between tables and is considered the primary key in another table.  
