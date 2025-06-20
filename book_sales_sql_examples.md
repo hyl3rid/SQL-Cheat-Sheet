@@ -310,6 +310,57 @@ FROM students;
 
 ---
 
+### Operators
+Arithmetic Operators
+Addition (+)
+Subtraction (-)
+Multiplication (*)
+Division (/) 
+Modulo (%)
+
+Comparison Operators
+Equal to (=)
+Greater than (>)
+Less than (<)
+Greater than or equal to (>=)
+Less than or equal to (<=)
+Not equal to (<> or !=)
+
+Logical Operators
+AND: Returns true if all conditions are true.
+OR: Returns true if any condition is true.
+NOT: Reverses the boolean value of a condition.
+BETWEEN: Checks if a value is within a range.
+IN: Checks if a value is within a set of values.
+EXISTS: Checks if a subquery returns any records.
+LIKE: Checks if a value matches a pattern.
+
+Bitwise Operators
+Bitwise AND (&)
+Bitwise OR (|)
+Bitwise XOR (^)
+Bitwise NOT (~)
+Left shift (<<)
+Right shift (>>)
+
+Compound Operators
+Add and assign (+=)
+Subtract and assign (-=)
+Multiply and assign (*=)
+Divide and assign (/=)
+Modulo and assign (%=)
+Bitwise AND and assign (&=)
+Bitwise XOR and assign (^=)
+Bitwise OR and assign (|=)
+
+Special Operators
+ALL: Compares a value to all values in a list.
+ANY: Compares a value to any value in a list.
+SOME: Similar to ANY.
+UNIQUE: Searches for unique rows in a table.
+
+---
+
 ### LIKE operator
 % operator represents 0 or more characters  
 _ operator represents a single character  
