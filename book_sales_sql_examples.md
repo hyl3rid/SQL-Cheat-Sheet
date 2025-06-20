@@ -54,10 +54,12 @@ ORDER BY SalesAmount DESC; -- or ASC
 
 ---
 
-### Limit Output
+### LIMIT/OFFSET Output
+LIMIT sets the amount of results
+OFFSET sets the steps between the results
 ```sql
 SELECT * FROM SalesData
-LIMIT 5;
+LIMIT 5 OFFSET 2;
 ```
 
 ---
