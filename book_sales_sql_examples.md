@@ -335,7 +335,7 @@ IN: Checks if a value is within a set of values.
 EXISTS: Checks if a subquery returns any records.  
 LIKE: Checks if a value matches a pattern.  
 
-**Bitwise Operators**
+**Bitwise Operators**  
 Bitwise AND (&)  
 Bitwise OR (|)  
 Bitwise XOR (^)  
@@ -343,7 +343,7 @@ Bitwise NOT (~)
 Left shift (<<)  
 Right shift (>>)  
 
-**Compound Operators**
+**Compound Operators**  
 Add and assign (+=)  
 Subtract and assign (-=)  
 Multiply and assign (*=)  
@@ -353,7 +353,7 @@ Bitwise AND and assign (&=)
 Bitwise XOR and assign (^=)  
 Bitwise OR and assign (|=)  
 
-**Special Operators**
+**Special Operators**  
 ALL: Compares a value to all values in a list.  
 ANY: Compares a value to any value in a list.  
 SOME: Similar to ANY.  
