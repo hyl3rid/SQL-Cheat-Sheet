@@ -420,7 +420,7 @@ Relational Databases are tables linked together maintaining data integrity, cons
 ### Database keys
 Keys identify unique rows in columns or groups of columns in tables. Keys create data integrity, avoids redundancy and creates relationships between tables.  
 
-Types of keys  
+**Types of keys**  
 Primary key: Key is assigned to a column or group of columns and ensures that no duplicate rows are in the table.  
 Composite key: Key is assigned to two or more columns that avoid redundancy on tables in the rows.  
 Unique key: Similar to primary keys but allow NULL value.  
