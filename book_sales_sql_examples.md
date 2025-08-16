@@ -403,6 +403,20 @@ WHERE salary > (
 
 ---
 
+### CHECK 
+To ensure requirements are enforced when adding data.
+```sql
+CREATE TABLE books (
+    isbn VARCHAR(20) PRIMARY KEY,
+    title VARCHAR(255),
+    author VARCHAR(255),
+    date INT CHECK (year_of_birth >= 1900 AND year_of_birth <= YEAR(CURDATE()) - 18)
+    price DECIMAL(5,2) CHECK (price > 0) -- Ensures price is always positive
+);
+```
+
+---
+
 ### SHOW Queries
 ```sql
 SHOW DATABASES;
@@ -427,3 +441,21 @@ Unique key: Similar to primary keys but allow NULL value.
 Super key: Contain a group of columns with primary keys, composite keys or no keys at all.  
 Candidate key: Uniquely identifies values in columns.  
 Foreign key: Create relationships between tables and is considered the primary key in another table.  
+
+---
+
+### Normalization  
+Normalization is the process of making the database data consistent, less redudant and efficient by making tables smaller and keeping references between them.  
+
+First Normal Form (1NF): The process of splitting multiple values are split into its unique data cell creating unique rows.  
+Second Normal Form (2NF): The process of creating tables that use data which relates directly and identifies data into specific groups. Remove partial dependencies which are non-key attributes fully depending on primary key data.  
+Third Normal Form (3NF): The process of creating tables which reference data sequentially and removes transitive dependency which is depending on specific data to be identified by non primary key data.  
+
+---
+
+### Integrity rules and constraints  
+- Entity Integrity: Records are unique.  
+- Referential Integrity: Records exist in referenced table.  
+- Domain Rules: Ensures records meet certain criteria before being added into the table.
+
+--- 
